@@ -15,8 +15,7 @@
 #
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
-USE_OEM_TV_APP := true
-$(call inherit-product, device/google/atv/products/atv_base.mk)
+$(call inherit-product, packages/services/Car/car_product/build/car.mk)
 
 PRODUCT_NAME := rpi4
 PRODUCT_DEVICE := rpi4
@@ -146,7 +145,6 @@ PRODUCT_COPY_FILES := \
     frameworks/base/data/sounds/effects/ogg/camera_click_48k.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/camera_click.ogg \
     $(PRODUCT_COPY_FILES)
 
-PRODUCT_AAPT_PREF_CONFIG := tvdpi
-PRODUCT_CHARACTERISTICS := tv
+PRODUCT_CHARACTERISTICS := automotive
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
