@@ -18,7 +18,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, packages/services/Car/car_product/build/car.mk)
 
 PRODUCT_NAME := car_rpi4
-PRODUCT_DEVICE := rpi4
+PRODUCT_DEVICE := car_rpi4
 PRODUCT_BRAND := arpi
 PRODUCT_MANUFACTURER := ARPi
 PRODUCT_MODEL := AAOS on Raspberry Pi 4
