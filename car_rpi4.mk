@@ -17,11 +17,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, packages/services/Car/car_product/build/car.mk)
 
-PRODUCT_NAME := rpi4
+PRODUCT_NAME := car_rpi4
 PRODUCT_DEVICE := rpi4
 PRODUCT_BRAND := arpi
 PRODUCT_MANUFACTURER := ARPi
-PRODUCT_MODEL := Raspberry Pi 4
+PRODUCT_MODEL := AAOS on Raspberry Pi 4
 
 include frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk
 
