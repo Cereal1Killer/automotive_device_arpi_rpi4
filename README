@@ -3,7 +3,7 @@
   $ sudo apt install libssl-dev python3-setuptools 
 
 # Download Android source
-  https://github.com/android-rpi/local_manifests
+  https://github.com/Cereal1Killer/automotive_arpi_local_manifests
 
 # Patch the source
   https://github.com/android-rpi/device_arpi_rpi4/wiki/arpi-13-:-framework-patch
@@ -12,7 +12,7 @@
  Refer to http://source.android.com/source/building.html
 
   $ source build/envsetup.sh
-  $ lunch rpi4-eng
+  $ lunch car_rpi4-userdebug
   $ make ramdisk systemimage vendorimage
 
  Use -j[n] option with make, if build host has a good number of CPU cores.
